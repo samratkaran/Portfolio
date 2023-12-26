@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body {
+  overflow-y: scroll;
+  overflow-x: hidden; /* Always show scrollbar, even if not needed */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5em; /* Set a small width to trigger scrollbar track */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #6e906a; /* Change the color as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #6e906a; /* Change the color as needed */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #6e906a; /* Change the color as needed */
+}
+
+
+
+
+.top-text{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 16%;
+}
+.all-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: inherit;
+  margin-top: 10%;
 }

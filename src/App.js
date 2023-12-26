@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import VideoBackground from './Components/background/backGorundVideo'
+import Navbar from './Components/navbar/Navbar'
+import RevealName from './Components/RevealName/RevealName'
+import AboutMe from './Components/About/AboutMe'
+import ResumeButton from './Components/ResumeButton/ResumeButton'
 
-function App() {
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-head-of-porto '>
+    <VideoBackground/>
+    <Navbar/>
+    <ResumeButton/>
+    <RevealName>
+    <div className='all-text'>
+    <div className='top-text'>
+    <img src={require("./Assets/Animation - 1697693462531.gif")} alt='karan' width={80}/>
+    <h2 >Hey</h2>
     </div>
-  );
+      <h1 >I'm Karan Samrat</h1>
+      </div>
+    </RevealName>
+
+    <AboutMe/>
+   
+
+    
+    
+    
+      
+    </div>
+  )
 }
 
-export default App;
+export default App
+
