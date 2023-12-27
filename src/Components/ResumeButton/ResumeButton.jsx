@@ -1,7 +1,10 @@
 import React from 'react'
 import "./ResumeButton.css"
+import resume from "../../Karan-Front_End_resume_ATS.pdf"
 
 const ResumeButton = () => {
+console.log(resume)
+  
   return (
     <>
 
@@ -13,7 +16,8 @@ const ResumeButton = () => {
         </svg>
     </div>
   </div>
-  <span>Resume</span>
+  <div>
+  <span> <a download={""} href={resume} onClick={()=>{window.open("https://drive.google.com/file/d/1NAmiT5z-qf9EOcLJ4ofl4kARXOMko9GP/view?usp=sharing")}}>Resume</a></span></div>
 </button>
     </>
   )
