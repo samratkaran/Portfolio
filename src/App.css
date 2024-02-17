@@ -23,19 +23,51 @@ body::-webkit-scrollbar-thumb:hover {
   background: #6e906a; /* Change the color as needed */
 }
 
-
-
-
-.top-text{
+.top-text {
   display: flex;
   justify-content: start;
   align-items: center;
   padding-right: 16%;
 }
-.all-text{
+.all-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
-  margin-top: 10%;
+  margin-top: 20%;
+  font-size: 5rem !important;
+}
+.hey-name {
+  font-size: 2rem;
+  text-align: center;
+  font-family: serif;
+}
+.name {
+  font-size: 80%;
+  text-align: center;
+  font-family: serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .all-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    margin-top: 20%;
+    font-size: 5rem !important;
+  }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+  .all-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    margin-top: 55%;
+    font-size: 5rem !important;
+    margin-bottom: 30%;
+  }
 }
