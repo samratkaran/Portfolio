@@ -7,12 +7,13 @@ import RevealName from "./Components/RevealName/RevealName";
 import AboutMe from "./Components/About/AboutMe";
 import ResumeButton from "./Components/ResumeButton/ResumeButton";
 import { useEffect } from "react";
+import Skills from "./Components/Skills/Skills";
 
 const App = () => {
   useEffect(() => {
     // Scroll to the top of the page after refresh
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(10, 0);
+  }, );
   return (
     <div className="main-head-of-porto ">
       <VideoBackground />
@@ -32,6 +33,7 @@ const App = () => {
       </RevealName>
       <ResumeButton />
       <AboutMe />
+      <Skills />
     </div>
   );
 };

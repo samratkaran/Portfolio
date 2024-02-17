@@ -10,17 +10,17 @@ body::-webkit-scrollbar {
 
 /* Track */
 body::-webkit-scrollbar-track {
-  background: #6e906a; /* Change the color as needed */
+  background: #1a9acc; /* Change the color as needed */
 }
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #6e906a; /* Change the color as needed */
+  background: #0d33de; /* Change the color as needed */
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #6e906a; /* Change the color as needed */
+  background: #bc0606cb; /* Change the color as needed */
 }
 
 .top-text {

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import "./Navbar.css"
+import "./Navbar.css";
 
 const navigation = [
   { name: "About", href: "#", current: true },
@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-navColor opacity-70 mt-4  h-24 main-navbar-of-porto "
+      className="bg-navColor opacity-70 mt-4  h-24 main-navbar-of-porto"
     >
       {({ open }) => (
         <>

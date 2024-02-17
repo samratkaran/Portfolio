@@ -1,5 +1,22 @@
 .main-navbar-of-porto {
   height: 6rem;
   position: fixed;
-  width: 100vw;
+  width: 100%;
+  z-index: 999; /* Ensure it's above other content */
+  font-family: fantasy;
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+  .main-navbar-of-porto {
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999; /* Ensure it's above other content */
+    color: black;
+    opacity: 0.8;
+  }
 }
