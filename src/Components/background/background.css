@@ -16,7 +16,5 @@ video {
   height: 100%; /* Use percentage height instead of viewport height */
   z-index: -1;
   object-fit: cover; /* Ensure the video covers the entire element */
-
-  object-fit: cover;
   width: 100vw; /* Ensure the video covers the entire container */
 }
