@@ -10,6 +10,7 @@ import {
 
 import data from "./Data";
 import styles from "./styles.module.css";
+import myImage from "../../Assets/HTML.png";
 
 export default function Skills() {
   const [open, set] = useState(false);
@@ -18,10 +19,10 @@ export default function Skills() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "20%", background: "hotpink" },
+    from: { size: "30%", background: "red" },
     to: {
-      size: open ? "100%" : "20%",
-      background: open ? "transparent" : "hotpink",
+      size: open ? "100%" : "30%",
+      background: open ? "transparent" : "green",
     },
   });
 
