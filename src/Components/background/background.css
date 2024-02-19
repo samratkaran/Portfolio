@@ -1,14 +1,22 @@
-
 .video-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: -1; /* Ensure the video stays in the background */
+  width: 100%; /* Use percentage width instead of viewport width */
+  height: 100%; /* Use percentage height instead of viewport height */
+  z-index: -1;
+  object-fit: cover; /* Ensure the video covers the entire element */
 }
 
 video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Use percentage width instead of viewport width */
+  height: 100%; /* Use percentage height instead of viewport height */
+  z-index: -1;
+  object-fit: cover; /* Ensure the video covers the entire element */
+
   object-fit: cover;
   width: 100vw; /* Ensure the video covers the entire container */
 }
