@@ -10,7 +10,7 @@ import {
 
 import data from "./Data";
 import styles from "./styles.module.css";
-import myImage from "../../Assets/HTML.png";
+
 
 export default function Skills() {
   const [open, set] = useState(false);
