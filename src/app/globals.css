@@ -14,8 +14,22 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body, html {
+  font-family: var(--bodyFont);
+  font-size: var(--16px);
+  color: #8fdcc2;
+  background: #233831;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  transition: background .2s linear;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga" on;
 }
+
+
