@@ -2,6 +2,7 @@
 
 import { NavbarDemo } from "@/components/Navbar/Navbar";
 import "./globals.css";
+import GradientBackground from "@/components/Navbar/Gradient";
 
 export const metadata = {
   title: "Karan Portfolio",
@@ -12,12 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <>
+      <GradientBackground>
       <NavbarDemo></NavbarDemo>
-      <div className="pt-24">
+      <div className="pt-24 ">
+      
+      
         {children}
         </div>
-        </>
+        </GradientBackground>
       </body>
     </html>
   );

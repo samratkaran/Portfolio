@@ -1,12 +1,17 @@
+
 import React from 'react'
+import Home from './home/Home';
+
 
 const page = () => {
   return (
-    <div>
+    <div className=''>
+    <Home></Home>
     
-      <h1 className='text-3xl text-center'>Hello</h1>
+
     </div>
   )
 }
 
 export default page;
+
