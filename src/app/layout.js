@@ -1,8 +1,10 @@
 
 
 import { NavbarDemo } from "@/components/Navbar/Navbar";
+import Head from "next/head";
 import "./globals.css";
-import GradientBackground from "@/components/Navbar/Gradient";
+
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 export const metadata = {
   title: "Karan Portfolio",
@@ -12,16 +14,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-      <GradientBackground>
-      <NavbarDemo></NavbarDemo>
-      <div className="pt-24 ">
-      
-      
-        {children}
-        </div>
-        </GradientBackground>
-      </body>
+    <>
+    <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Acorn:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+    <body >
+     
+     <BackgroundGradientAnimation>
+     <NavbarDemo></NavbarDemo>
+     <div className="pt-24 ">
+     
+     
+       {children}
+       </div>
+       </BackgroundGradientAnimation>
+   
+     </body>
+    </>
     </html>
   );
 }

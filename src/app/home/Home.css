@@ -1,0 +1,11 @@
+h1{
+    font-size: var(--font-h1);
+    /* font-family: "Parkinsans", sans-serif; */
+    font-family: myFont;
+    font-weight: 600;
+}
+h2{
+    font-size: var(--font-h2);
+    font-family: myFont;
+    
+}

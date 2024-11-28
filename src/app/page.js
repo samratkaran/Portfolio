@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Home from './home/Home';
+import Home from './home/page';
 
 
 const page = () => {
